@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Announcement Input Form</title>
+  <style>
+    form {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #f0f0f0; /* Light gray background */
+      padding: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input, textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Announcement Input Form</h1>
+  <form>
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" placeholder="Enter the announcement title">
+    <br>
+    <label for="body">Body:</label><br>
+    <textarea id="body" name="body" placeholder="Enter the announcement content"></textarea>
+    <br>
+    <div class="form-row">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" placeholder="Select the start date">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" placeholder="Select the end date">
+    </div>
+    <br>
+    <label for="audience">Target Audience:</label><br>
+    <input type="checkbox" id="internal" name="audience" value="internal" placeholder="Select if the announcement is internal"> Internal
+    <br>
+    <input type="checkbox" id="external" name="audience" value="external" placeholder="Select if the announcement is external"> External
+    <br>
+    <input type="checkbox" id="parents" name="audience" value="parents" placeholder="Select if the announcement is for parents"> Parents
+    <br>
+    <label for="mediaLink">Media Link:</label><br>
+    <input type="text" id="mediaLink" name="mediaLink" placeholder="Enter the link to a media file (if applicable)">
+    <br>
+    <label for="broadcastNotes">Broadcast Notes:</label><br>
+    <textarea id="broadcastNotes" name="broadcastNotes" placeholder="Enter any notes for the broadcaster"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
